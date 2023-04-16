@@ -1,0 +1,140 @@
+
+
+
+ body {
+  
+	background: url(/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,f484e3+100 */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #1e5799 0%, #f484e3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  #1e5799 0%,#f484e3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  #1e5799 0%,#f484e3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#f484e3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    );
+    height: 1028px;
+	
+  }
+  .contact-box {
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	
+  }
+  .contact {
+	
+	background-color: #fff;
+	width: 500px; 
+	height: 300px;
+	padding: 50px;
+	text-align: center;
+	box-shadow: 0 0 12px 1px #2f3640;
+	border-radius: 3px;
+	border-radius: 25px;
+	
+  }
+  .text {
+	
+	font-size: 13px;
+	font-family: verdana;
+	margin-top: 10px;
+	position: relative;
+	top: -35px;
+	color: #000000;
+	left: -11%;
+	pointer-events: none;
+	
+  }
+  input {
+	
+	border: none;
+	outline: none;
+	margin: 5px;
+	height: 25px;
+	width: 200px;
+	border-bottom: 2px solid #2f3640;
+	transition: 5s;
+  }
+  input:valid,
+  input:focus {
+	
+	background-color: #353b48;
+	color: #fff;
+	border-bottom: 2px solid #ff4d4d;
+   
+	
+  }
+  input[name="firstname"]:focus ~.one {
+	
+	position: relative;
+	top: -60px;
+	color: #ff4d4d;
+	
+  }
+  input[name="firstname"]:valid ~ .one {
+	
+	top: -60px;
+	color: #ff4d4d;
+	
+  }
+  input[name="lastname"]:focus ~ .two {
+	
+	position: relative;
+	top: -60px;
+	color: #ff4d4d;
+	
+  }
+  input[name="lastname"]:valid ~ .two {
+	
+	top: -60px;
+	color: #ff4d4d;
+	
+  }
+  input[name="Email"]:focus ~ .three {
+	
+	position: relative;
+	top: -60px;
+	color: #ff4d4d;
+	
+  }
+  input[name="Email"]:valid ~ .three {
+	
+	top: -60px;
+	color: #ff4d4d;
+	
+  }
+  textarea {
+	
+	max-width: 400px;
+	min-width: 200px;
+	min-height: 50px;
+	max-height: 100px;
+	
+  }
+  textarea {
+	
+	color: #1a1b19;
+	border: 1px solid;
+	
+  }
+  textarea:focus {
+	
+	background-color: #353b48;
+	color: #fff;
+	outline: none;
+	border: 1px solid #ff3838;
+	
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+ .form {
+
+	mask-position: 100px;
+	position: relative;
+ }

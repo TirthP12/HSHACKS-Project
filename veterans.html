@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./veterans.css" />
+    <title> Contact </title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+                <img src="IMG/pht.d9b755129dbd36844279.png" alt="Logo"
+                width="35"
+                height="35"  >
+        <h4 class="logo"> PH&T Contact Form </h4>
+      </div>
+      <nav>
+        <ul class="nav-links">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="Veterans.html">Veterans</a></li>
+          <li><a class="nav-link" href="tirth.html"> Volunteer  </a></li>
+        </ul>
+      </nav>
+      <div class="Button">
+        
+      </div>
+    </header>
+
+    <main>
+      <section class="presentation">
+        <div class="introduction">
+          <div class="intro-text">
+            <h1> </h1>
+            <p>
+              
+                           
+                                <title>Contact Form </title>
+                                <style>
+                                  
+                                  label, input {
+                                    display: block;
+                                    margin-bottom: 10px;
+                                  }
+                            
+                                  input[type="submit"] {
+                                    margin-top: 20px;
+                                  }
+                                </style>
+                              </head>
+                              <body>
+                                <h1>Contact Form
+                                    
+                                </h1>
+                                    <center>
+                                <form action="https://script.google.com/macros/s/AKfycby4eypC7p55Hj1Y2nYVDK2CFDBxqXaVx9FURT06DGgnW9B726jwJHTg90Zb0fMbEJ2OAA/exec" method="post">
+                                  <label for="email">Email:</label>
+                                  <input type="email" placeholder="Enter Email" id="emailTwo" name="emailTwo" required>
+                                
+                            
+                                  <label for="name">Name:</label>
+                                  <input type="text" placeholder="Enter First Name" id="nameTwo" name="nameTwo" required>
+                    
+                                 
+                                  <label for="phone">Phone:</label>
+                                  <input type="tel" placeholder="Enter Phone number" id="phoneTwo" name="phoneTwo" required>
+                            
+                                  <input onclick="submitForm()" type="submit" value="Submit" > 
+                            
+                                  
+                                </form>  
+                            </center>
+                                
+                              <script>
+                                  function sendEmail() {
+                                    
+                                }
+                                </script>
+                            </script>
+                                <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+                                <script>
+                                    (function() {
+                             
+                                        emailjs.init('service_ysfesom');
+                                    })();
+                                </script>
+                            
+                            <script>
+                                
+                                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                    event.preventDefault(); 
+                            
+                                    const formData = new FormData(event.target);
+                            
+                                 
+                                    emailjs.send('service_ysfesom', 'template_nzwe0gt', {
+                                        name: formData.get('name'),
+                                        email: formData.get('email'),
+                                        phone: formData.get('phone'),
+                                        subject: formData.get('subject'),
+                                        message: formData.get('message')
+                                    }).then(function(response) {
+                                        console.log('Email sent!', response.status, response.text);
+                                    }, function(error) {
+                                        console.log('Email failed to send:', error);
+                                    });
+                            
+                                      
+                                    event.target.reset();
+                                });
+                            </script>
+                                
+                                <script>
+                                    const scriptURL = 'https://script.google.com/macros/s/AKfycby4eypC7p55Hj1Y2nYVDK2CFDBxqXaVx9FURT06DGgnW9B726jwJHTg90Zb0fMbEJ2OAA/exec'>
+                                    const form = document.forms['submit-to-google-sheet']
+
+                                    form.addeEventListener('submit',  e => {
+                                        e.preventDefault()
+                                        fetch (scriptURL, { method: 'POST', body: new FormData(form)})
+                                        .then(response => console.log('Success!' , response))
+                                        .catch(error => console.error('Error!, error.message'))
+                                        
+                                    })
+                                  //  function submitForm() {
+                                    //      var name = document.getElementById("name").value;
+                                      //        var email = document.getElementById("email").value;
+                                       //       var phone = document.getElementById("phone").value;
+                                         //             google.script.run.insertData(name, email);
+                                           //           console.log(name);
+                                             //         console.log(email);
+                                                    
+                                    
+                                   //      }
+                          
+                                    </script>
+
+
+
+
+
+
+
+
+
+                              </body>
+                            </html>
+                            
+                
+                
+                
+
+            </p>
+          </div>
+         
+        </div>
+        <div class="cover">
+                    <style>
+
+                        </style>
+          
+          <fit img 20px> 
+            
+          </fit>
+                </div>
+                
+              <div class="box"></div>
+            </section>
+            <footer> 
+                <p> 
+                          
+          <footer>                                             Copyright © Project Headspace & Timing 2023 Tirth Patel  
+                                                   </p>
+                                                    </footer>
+
+                    
+                    
+                    </p>
+                 </footer>
+
+    </main>
+  </body>
+</html>
